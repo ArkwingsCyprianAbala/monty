@@ -34,7 +34,7 @@ void f_div(stack_t **head, unsigned int counter)
 		exit(EXIT_FAILURE);
 	}
 	auxx = hdr->next->n / hdr->n;
-	hdr->next->n = aux;
+	hdr->next->n = auxx;
 	*head = hdr->next;
 	free(hdr);
 }
